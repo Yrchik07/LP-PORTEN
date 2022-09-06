@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="top-line">
-        <div class="schedule">
-            <a href="tel:+88121234567">
-            <img class="handset" src="img/signs/handset.png" alt="handset">+8 (812) 123-45-67 | Працюємо 7 днів на тиждень | 9:00 — 18:00</a>
-        </div>
+        <div class="row">
+            <div class="col-10">
+                <a href="tel:+88121234567" class="nav-link">
+                <img class="handset" src="img/signs/handset.png" alt="handset">+8 (812) 123-45-67 | Працюємо 7 днів на тиждень | 9:00 — 18:00</a>
+            </div>
 
-        <div class="input">
-            <a href="#">
+            <div class="col-2">
+                <a class="nav-link" href="#">
                 <img class="arrow" src="img/signs/arrow.png" alt="arrow">
-            <img src="img/signs/bracket.png" alt="bracket">
-            <a href="#">Вхід/<a href="#">Реєстрація</a></a></a></div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="second-line">
-            <a class="PORTEN" href="#">PORTEN</a>
-            <div class="settings">
-                <a class="pressed" href="#">сподобалось</a>
-                <a href="#">Особистий кабінет</a>
-                <a class="setting" href="#">налаштування</a>
-                <a class="basket" href="#"><img src="img/signs/basket.png" alt="basket"></a>
-                <a class="Search" href="#"><img src="img/signs/Search.png" alt="Search"></a>
+                <img src="img/signs/bracket.png" alt="bracket">
+                <a class="nav-link" href="#">Вхід /
+                <a class="nav-link" href="#">Реєстрація</a></a></a>
             </div>
         </div>
     </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">PORTEN</a>
+            </div>
+
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link text-uppercase" href="#">сподобалось</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">Особистий кабінет</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#">налаштування</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/signs/basket.png" alt="basket"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/signs/Search.png" alt="Search"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="first-screen">
-        <!-- <img src="img/background/Rectangle 3.jpg" alt=""> -->
+        <img src="img/background/Rectangle 3.jpg" alt="">
         <div class="logo">
             <h1>PORTEN</h1>
             <img src="img/signs/Line.png" alt="Line">
@@ -46,140 +60,208 @@
             Тернополі, Харкові, Херсоні, Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України</p>
         </div>
     </div>
-    <div>
-        <div class="SEASON_2021/22">
-            <h2>СЕЗОН 2021/22</h2>
-            <img src="img/signs/Line.png" alt="Line">
-            <div>
-                <img src="img/watch/Louis.jpg" alt="Louis">
-                <h2>Louis XVI ATHOS</h2>
-                <h3>13 600 грн.</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-5">
+            <div class="SEASON_2021/22">
+                <h2 class="text-center">СЕЗОН 2021/22</h2>
+                <img src="img/signs/Line.png" alt="Line">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/watch/Louis.jpg" alt="Louis">
+                        <h2>Louis XVI ATHOS</h2>
+                        <h3>13 600 грн.</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/watch/Carl.jpg" alt="Carl">
+                        <h2>Carl von Zeyten</h2>
+                        <h3>16 500 грн.</h3>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/watch/JORD.jpg" alt="JORD">
+                        <h2>JORD AR5905</h2>
+                        <h3>65 000 грн.</h3>
+                    </div>
+                </div>
             </div>
-            <div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5">
+            <div class="new_collection">
+                <h2 class="text-center">Нова колекція</h2>
+                <img src="img/signs/Line.png" alt="Line">
+                <button>Каталог</button>
+                <img src="img/background/new_collection.jpg" alt="new_collection">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/background/man_in_a_suit.jpg" alt="">
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="collection_2018">
+                        <h2 class="text-center">колекція 2018</h2>
+                        <img src="/img/signs/Line.png" alt="Line">
+                        <p>Годинники як інструмент визначення часу давно і надійно прижилися в людській реальності. Романтики та
+                            прагматики,
+                            художники та бізнесмени, чоловіки та жінки, дорослі та діти - всі хочуть знати котра година в
+                            потрібний момент.
+                            Скільки
+                            хвилин пройшло, скільки залишилося, а ще - які саме моделі і якого бренду виблискують на руці у
+                            друга, коханої
+                            або
+                            конкурента. З давніх часів, коли людина здогадався втикнути в землю паличку та іншою поличкою взявся
+                            відміряти
+                            рівні
+                            проміжки часу на піску, не вщухають суперечки - яким повинний бути годинник? Наручним, або
+                            настільним, або
+                            настінним,
+                            або, нарешті, підлоговим? Чому ж кожен діамантик на безеле або шестерінка в механізмі незмінно
+                            змушують
+                            гордовито
+                            випнутися нижню губу володаря аксесуара, а щоки - роздутися?</p>
+                        <button >переглянути колекцію</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center">Нові надходження</h2>
+            <img src="/img/signs/Line.png" alt="Line">
+            <div class="col-3">
                 <img src="img/watch/Carl.jpg" alt="Carl">
                 <h2>Carl von Zeyten</h2>
                 <h3>16 500 грн.</h3>
             </div>
-            <div>
+            <div class="col-3">
                 <img src="img/watch/JORD.jpg" alt="JORD">
                 <h2>JORD AR5905</h2>
                 <h3>65 000 грн.</h3>
             </div>
-        </div>
-        <div class="new_collection">
-            <h2>Нова колекція</h2>
-            <img src="img/signs/Line.png" alt="Line">
-            <button>Каталог</button>
-            <img src="img/background/new_collection.jpg" alt="new_collection">
-        </div>
-        <div class="man_in_a_suit">
-            <img src="img/background/man_in_a_suit.jpg" alt="">
-        </div>
-        <div class="collection_2018">
-            <h2>колекція 2018</h2>
-            <img src="/img/signs/Line.png" alt="Line">
-            <p>Годинники як інструмент визначення часу давно і надійно прижилися в людській реальності. Романтики та прагматики,
-            художники та бізнесмени, чоловіки та жінки, дорослі та діти - всі хочуть знати котра година в потрібний момент. Скільки
-            хвилин пройшло, скільки залишилося, а ще - які саме моделі і якого бренду виблискують на руці у друга, коханої або
-            конкурента. З давніх часів, коли людина здогадався втикнути в землю паличку та іншою поличкою взявся відміряти рівні
-            проміжки часу на піску, не вщухають суперечки - яким повинний бути годинник? Наручним, або настільним, або настінним,
-            або, нарешті, підлоговим? Чому ж кожен діамантик на безеле або шестерінка в механізмі незмінно змушують гордовито
-            випнутися нижню губу володаря аксесуара, а щоки - роздутися?</p>
-            <button>переглянути колекцію</button>
-        </div>
-    </div>
-    <div class="New_needs">
-        <h2>Нові надходження</h2>
-        <img src="/img/signs/Line.png" alt="Line">
-        <div>
-            <img src="img/watch/Carl.jpg" alt="Carl">
-            <h2>Carl von Zeyten</h2>
-            <h3>16 500 грн.</h3>
-        </div>
-        <div>
-            <img src="img/watch/JORD.jpg" alt="JORD">
-            <h2>JORD AR5905</h2>
-            <h3>65 000 грн.</h3>
-        </div>
-        <div>
-            <img src="img/watch/Emporio.jpg" alt="Emporio">
-            <h2>Emporio Armani Sportivo</h2>
-            <h3>165 000 грн.</h3>
-        </div>
-        <div>
-            <img src="img/watch/Rolex.jpg" alt="Rolex">
-            <h2>Rolex Oyster Perpetual</h2>
-            <h3>280 000 грн.</h3>
-        </div>
-        <div>
-            <img src="img/watch/Louis.jpg" alt="Louis">
-            <h2>Louis XVI ATHOS</h2>
-            <h3>13 600 грн.</h3>
-        </div>
-        <div>
-            <img src="img/watch/U-Boat.jpg" alt="U-Boat">
-            <h2>U-Boat Italo Fontana</h2>
-            <h3>18 700 грн.</h3>
-        </div>
-        <div>
-            <img src="img/watch/Gucci.jpg" alt="Gucci">
-            <h2>Gucci Men's G</h2>
-            <h3>38 500 грн.</h3>
-        </div>
-        <div>
-            <img src="img/watch/JORD.jpg" alt="JORD">
-            <button>ПОКАЗАТИ ВСІ</button>
+            <div class="col-3">
+                <img src="img/watch/Emporio.jpg" alt="Emporio">
+                <h2>Emporio Armani Sportivo</h2>
+                <h3>165 000 грн.</h3>
+            </div>
+            <div class="col-3">
+                <img src="img/watch/Rolex.jpg" alt="Rolex">
+                <h2>Rolex Oyster Perpetual</h2>
+                <h3>280 000 грн.</h3>
+            </div>
+            <div class="col-3">
+                <img src="img/watch/Louis.jpg" alt="Louis">
+                <h2>Louis XVI ATHOS</h2>
+                <h3>13 600 грн.</h3>
+            </div>
+            <div class="col-3">
+                <img src="img/watch/U-Boat.jpg" alt="U-Boat">
+                <h2>U-Boat Italo Fontana</h2>
+                <h3>18 700 грн.</h3>
+            </div>
+            <div class="col-3">
+                <img src="img/watch/Gucci.jpg" alt="Gucci">
+                <h2>Gucci Men's G</h2>
+                <h3>38 500 грн.</h3>
+            </div>
+            <div class="col-3">
+                <img src="img/watch/JORD.jpg" alt="JORD">
+                <button>ПОКАЗАТИ ВСІ</button>
+            </div>
         </div>
     </div>
     <div class="Articles">
-        <h2>Статті та корисна інформація</h2>
+        <h2 class="text-center">Статті та корисна інформація</h2>
         <img src="/img/signs/Line.png" alt="Line">
-        <div class="watchmaker">
-            <img src="/img/image/watchmaker.jpg" alt="watchmaker">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="watchmaker">
+                        <img src="/img/image/watchmaker.jpg" alt="watchmaker">
+                    </div>
+                </div>
+               <div class="col-4">
+                <div class="ROGER_DUBUIS">
+                    <h3>ROGER DUBUIS. ЧАСТИНА 1</h3>
+                    <p>Цей чемпіон «гіперхорології» став синонімом надмірності й завдяки своїй радикальній скелетонізованій архітектурі
+                        неодноразово демонструє пристрасть до годинного вуайєризму. У цій серії з чотирьох статей описується нещодавня
+                        подорож
+                        на мануфактуру, де можна було спостерігати за виготовленням та оздобленням деталей, а також за збіркою та
+                        регулюванням
+                        годинників компанії.</p>
+                    <button>читати</button>
+                    <a href="#">#ЕКСКЛЮЗИВ </a>
+                    <a href="#">#ПРОБРЕНД</a>
+                </div>
+               </div>
+            </div>
         </div>
-        <div class="ROGER_DUBUIS">
-            <h3>ROGER DUBUIS. ЧАСТИНА 1</h3>
-            <p>Цей чемпіон «гіперхорології» став синонімом надмірності й завдяки своїй радикальній скелетонізованій архітектурі
-            неодноразово демонструє пристрасть до годинного вуайєризму. У цій серії з чотирьох статей описується нещодавня подорож
-            на мануфактуру, де можна було спостерігати за виготовленням та оздобленням деталей, а також за збіркою та регулюванням
-            годинників компанії.</p>
-            <button>читати</button>
-            <a href="#">#ЕКСКЛЮЗИВ </a>
-            <a href="#">#ПРОБРЕНД</a>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="luxury_watches">
+                        <img src="/img/image/luxury_watches.jpg" alt="luxury_watches">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="history_of_luxury_watches">
+                        <h3>ІСТОРІЯ ЛЮКСОВИХ ГОДИННИКІВ. ЧАСТИНА 1</h3>
+                        <p>Історія люксових годинників зародилася дуже давно, вона веде відлік із часів перших годинників у світі. Тоді
+                            годинник
+                            був розкішшю, яку могла собі дозволити лише найвища еліта суспільства. Навіть не всім, хто має титул і великі
+                            гроші,
+                            могли виготовити цей розкішний аксесуар. Власне, з того часу мало що змінилося.</p>
+                        <button>читати</button>
+                        <a href="#">#ЕКСКЛЮЗИВ </a>
+                        <a href="#">#ИСТОРІЯ</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="luxury_watches">
-            <img src="/img/image/luxury_watches.jpg" alt="luxury_watches">
-        </div>
-        <div class="history_of_luxury_watches">
-            <h3>ІСТОРІЯ ЛЮКСОВИХ ГОДИННИКІВ. ЧАСТИНА 1</h3>
-            <p>Історія люксових годинників зародилася дуже давно, вона веде відлік із часів перших годинників у світі. Тоді годинник
-            був розкішшю, яку могла собі дозволити лише найвища еліта суспільства. Навіть не всім, хто має титул і великі гроші,
-            могли виготовити цей розкішний аксесуар. Власне, з того часу мало що змінилося.</p>
-            <button>читати</button>
-            <a href="#">#ЕКСКЛЮЗИВ </a>
-            <a href="#">#ИСТОРІЯ</a>
-        </div>
-        <div class="CHRONOGRAPH">
-            <img src="/img/image/CHRONOGRAPH.jpg" alt="CHRONOGRAPH">
-        </div>
-        <div class="CHRONOGRAPH_HISTORY">
-            <h3>ВЕЛИКИЙ ТА СМІЛИВИЙ TISSOT PRS 516 CHRONOGRAPH</h3>
-            <p>На початку цього року компанія Tissot оновила модель PRS 516 Automatic Chronograph, але не пішла вінтажним шляхом. На
-            противагу колекції Heritage із переконливими рімейками вінтажних моделей, PRS 516 – це сучасний хронограф із зухвалим
-            настроєм, безліччю деталей автоспорту й за чудовою ціною.</p>
-            <button>читати</button>
-            <a href="#">#ХРОНОГРАФ </a>
-            <a href="#">#TISSOT </a> 
-            <a href="#">#ОГЛЯДГОДИННИКIВ</a>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="CHRONOGRAPH">
+                        <img src="/img/image/CHRONOGRAPH.jpg" alt="CHRONOGRAPH">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="CHRONOGRAPH_HISTORY">
+                        <h3>ВЕЛИКИЙ ТА СМІЛИВИЙ TISSOT PRS 516 CHRONOGRAPH</h3>
+                        <p>На початку цього року компанія Tissot оновила модель PRS 516 Automatic Chronograph, але не пішла вінтажним
+                            шляхом. На
+                            противагу колекції Heritage із переконливими рімейками вінтажних моделей, PRS 516 – це сучасний хронограф із
+                            зухвалим
+                            настроєм, безліччю деталей автоспорту й за чудовою ціною.</p>
+                        <button>читати</button>
+                        <a href="#">#ХРОНОГРАФ </a>
+                        <a href="#">#TISSOT </a>
+                        <a href="#">#ОГЛЯДГОДИННИКIВ</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="partners">
-        <h2>Наші партнери</h2>
-        <img src="/img/signs/Line.png" alt="Line">
-        <a href="#"><img src="/img/partners/coco.png" alt="coco"></a>
-        <a href="#"><img src="/img/partners/rolex.png" alt="rolex"></a>
-        <a href="#"><img src="/img/partners/breguet.png" alt="breguet"></a>
-        <a href="#"><img src="/img/partners/haven.png" alt="haven"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="partners">
+                <h2 class="text-center">Наші партнери</h2>
+                <img src="/img/signs/Line.png" alt="Line">
+                <a href="#"><img src="/img/partners/coco.png" alt="coco"></a>
+                <a href="#"><img src="/img/partners/rolex.png" alt="rolex"></a>
+                <a href="#"><img src="/img/partners/breguet.png" alt="breguet"></a>
+                <a href="#"><img src="/img/partners/haven.png" alt="haven"></a>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="about_the_company">
